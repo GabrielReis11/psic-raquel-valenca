@@ -1,0 +1,68 @@
+#hero {
+  height: 100vh;
+  min-height: 700px;
+  background-color: $off-white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .psicologa-tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $amarelo-claro;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $amarelo-claro;
+    margin-bottom: 25px;
+    line-height: 1;
+
+    @include mobile {
+      font-size: 3.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: $grafite;
+    max-width: 500px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .hero-img-container {
+    position: relative;
+    z-index: 1;
+
+    .organic-shape {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 110%;
+      background-color: $amarelo-claro;
+      z-index: -1;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; // Forma orgânica aproximada
+      animation: morph 8s ease-in-out infinite;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}

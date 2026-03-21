@@ -1,0 +1,65 @@
+.navbar {
+  padding: 15px 0;
+  @include transition;
+  background-color: $amarelo-claro !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  &.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-link {
+    color: $off-white !important; // Cor off-white conforme pedido
+    font-weight: 500 !important; // Peso 500 conforme pedido
+    font-size: 0.95rem;
+    margin: 0 15px;
+    position: relative;
+    @include transition;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $amarelo-escuro;
+      @include transition;
+    }
+
+    &:hover {
+      color: white !important;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-contato {
+    background-color: $amarelo-escuro;
+    color: $off-white !important;
+    padding: 10px 25px !important;
+    border-radius: 50px;
+    margin-left: 20px !important;
+    font-weight: 500 !important;
+    @include transition;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $grafite;
+      color: white !important;
+      transform: translateY(-3px);
+    }
+  }
+
+  .navbar-toggler {
+    border-color: rgba($off-white, 0.5);
+    .navbar-toggler-icon {
+      filter: invert(1); // Torna o ícone branco para combinar com o texto
+    }
+  }
+}

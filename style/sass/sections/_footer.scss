@@ -1,0 +1,27 @@
+footer {
+  padding: 60px 0;
+  background-color: $grafite;
+  color: white;
+
+  .social-links {
+    a {
+      font-size: 1.8rem;
+      color: white;
+      margin: 0 15px;
+      @include transition;
+      display: inline-block;
+
+      &:hover {
+        color: $amarelo-claro;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}

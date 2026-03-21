@@ -1,0 +1,66 @@
+#especialidades {
+  background-color: $amarelo-claro;
+  padding: $section-padding 0;
+
+  .section-title {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+  }
+
+  .specialty-card {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    position: relative;
+    height: 100%;
+    @include transition;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+      font-size: 3rem;
+      color: $amarelo-escuro;
+      margin-bottom: 25px;
+      background: rgba($amarelo-claro, 0.15);
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-family: $font-title;
+      font-size: 2rem;
+      color: $amarelo-escuro;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      color: $grafite;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .flower-detail {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 40px;
+      opacity: 0.6;
+    }
+  }
+}

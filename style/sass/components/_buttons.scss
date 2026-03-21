@@ -1,0 +1,33 @@
+// Estilos de Botões Globais (Padrão Hero)
+.btn-hero, .btn-custom, .btn-contato {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 35px; // Padrão do Hero
+  background-color: $amarelo-claro !important;
+  color: white !important; // Agora com fonte branca conforme pedido
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  @include transition;
+  box-shadow: 0 4px 15px rgba($amarelo-claro, 0.3);
+
+  i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background-color: $amarelo-escuro !important;
+    color: white !important;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba($amarelo-escuro, 0.3);
+  }
+}
+
+// Pequeno ajuste para a Navbar não ficar com botão gigante
+.navbar .btn-contato {
+  padding: 8px 25px !important;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,19 @@
+// 1. CORES
+$amarelo-claro: #F6C657;
+$amarelo-escuro: #A88532;
+$off-white: #FAFAF5;
+$grafite: #2D2D2D;
+
+// Mapeamento para nomes semânticos (opcional, mas recomendado)
+$color-primary: $amarelo-claro;
+$color-secondary: $amarelo-escuro;
+$color-bg: $off-white;
+$color-text: $grafite;
+
+// 2. FONTES
+$font-main: 'Montserrat', sans-serif;
+$font-title: 'Playfair Display', serif;
+
+// 3. ESPAÇAMENTOS
+$section-padding: 80px;
+$section-padding-mobile: 50px;

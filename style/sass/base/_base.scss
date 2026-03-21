@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  color: $color-text;
+  background-color: $color-bg;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  @include transition;
+}
+
+section {
+  padding: $section-padding 0;
+  @include mobile {
+    padding: $section-padding-mobile 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

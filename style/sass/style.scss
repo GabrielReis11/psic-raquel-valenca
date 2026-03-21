@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+@import 'base/base';
+
+// Components
+@import 'components/navbar';
+@import 'components/buttons';
+
+// Sections
+@import 'sections/hero';
+@import 'sections/bg-message';
+@import 'sections/about';
+@import 'sections/specialties';
+@import 'sections/appointments';
+@import 'sections/feedbacks';
+@import 'sections/footer';

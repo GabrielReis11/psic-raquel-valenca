@@ -1,0 +1,99 @@
+#atendimentos {
+  background-color: $off-white;
+  padding: $section-padding 0;
+
+  .btn-toggle {
+    background-color: transparent;
+    color: $amarelo-escuro;
+    border: 2px solid $amarelo-escuro;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin: 0 10px;
+    @include transition;
+
+    &.active {
+      background-color: $amarelo-escuro;
+      color: white;
+    }
+
+    &:hover:not(.active) {
+      background-color: rgba($amarelo-escuro, 0.1);
+    }
+  }
+
+  .atendimento-content {
+    margin-top: 60px;
+
+    h3 {
+      font-size: 2.5rem;
+      color: $amarelo-escuro;
+      margin-bottom: 30px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: $grafite;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .about-list {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin-bottom: 15px;
+        font-size: 1.05rem;
+        
+        strong {
+          color: $amarelo-escuro;
+        }
+      }
+    }
+  }
+
+  .atendimento-img-container {
+    position: relative;
+    padding: 20px;
+
+    .organic-shape {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 90%;
+      background-color: $amarelo-claro;
+      z-index: -1;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
+
+  .location-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid $amarelo-claro;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      font-family: $font-title;
+      color: $amarelo-escuro;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+  }
+}

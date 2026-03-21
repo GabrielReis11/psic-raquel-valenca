@@ -1,0 +1,29 @@
+#galeria {
+  padding: $section-padding 0;
+  background-color: white;
+
+  .section-title {
+    text-align: center;
+    color: $amarelo-escuro;
+    margin-bottom: 50px;
+  }
+
+  .gallery-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    img {
+      @include transition(0.5s);
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
