@@ -56,7 +56,7 @@
                         <div class="hero-content" data-aos="fade-right">
                             <div class="infos-raquel">
                                 <h1>Raquel Valença</h1>
-                                <span class="psicologa-tag">PSICÓLOGA - GESTALT-TERAPEUTA | CRP 19/4302</span>
+                                <span class="psicologa-tag">PSICÓLOGA - GESTALT-TERAPEUTA | CRP 19/4502</span>
                             </div>
                             <p>Atendimento humanizado através da Gestalt-terapia com apoio profissional para sua jornada de autoconhecimento, de forma presencial ou online.</p>
                             <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank" class="btn btn-hero">
