@@ -7,14 +7,39 @@
   position: relative;
   overflow: hidden;
 
+  @include mobile {
+    height: auto;
+    padding-top: 140px; // Aumentado para evitar que a navbar cubra
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  .infos-raquel{
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $amarelo-escuro;
+      margin: 15px 0;
+      opacity: 0.5;
+
+      @include mobile {
+        margin: 15px auto; // Centraliza a linha no mobile
+      }
+    }
+  }
+
   .psicologa-tag {
     display: inline-block;
     font-size: 0.85rem;
     font-weight: 600;
-    color: $amarelo-claro;
+    color: $amarelo-escuro;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    position: relative;
+
+
   }
 
   h1 {
@@ -25,7 +50,7 @@
     line-height: 1;
 
     @include mobile {
-      font-size: 3.5rem;
+      font-size: 2.8rem; // Reduzido para caber melhor em telas pequenas
     }
   }
 
@@ -35,11 +60,21 @@
     max-width: 500px;
     margin-bottom: 40px;
     line-height: 1.6;
+
+    @include mobile {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .hero-img-container {
     position: relative;
     z-index: 1;
+
+    @include mobile {
+      margin-top: 60px; // Margem entre o botão e a foto no mobile
+      text-align: center;
+    }
 
     .organic-shape {
       position: absolute;

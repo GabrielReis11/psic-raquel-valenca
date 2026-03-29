@@ -29,6 +29,7 @@ a {
 
 section {
   padding: $section-padding 0;
+  overflow: hidden;
   @include mobile {
     padding: $section-padding-mobile 0;
   }
@@ -38,4 +39,29 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  
+  li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 1.05rem;
+
+    &::before {
+      content: '🌻';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.1rem;
+    }
+
+    strong {
+      color: $amarelo-escuro;
+    }
+  }
 }

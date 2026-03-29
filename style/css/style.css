@@ -30,6 +30,7 @@ a {
 
 section {
   padding: 80px 0;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   section {
@@ -41,6 +42,28 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.about-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.05rem;
+}
+.about-list li::before {
+  content: "🌻";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.1rem;
+}
+.about-list li strong {
+  color: #A88532;
 }
 
 .navbar {
@@ -140,14 +163,37 @@ section {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 991px) {
+  #hero {
+    height: auto;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+}
+#hero .infos-raquel::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #A88532;
+  margin: 15px 0;
+  opacity: 0.5;
+}
+@media (max-width: 991px) {
+  #hero .infos-raquel::after {
+    margin: 15px auto;
+  }
+}
 #hero .psicologa-tag {
   display: inline-block;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #F6C657;
+  color: #A88532;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  position: relative;
 }
 #hero h1 {
   font-size: 4rem;
@@ -158,7 +204,7 @@ section {
 }
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 }
 #hero p {
@@ -168,9 +214,21 @@ section {
   margin-bottom: 40px;
   line-height: 1.6;
 }
+@media (max-width: 991px) {
+  #hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #hero .hero-img-container {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  #hero .hero-img-container {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 #hero .hero-img-container .organic-shape {
   position: absolute;
@@ -227,7 +285,7 @@ section {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 60px 100px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -239,7 +297,7 @@ section {
 }
 #bg-message .glass-card p {
   font-family: "Playfair Display", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 0;
@@ -259,6 +317,12 @@ section {
 #sobre-mim .about-img-container {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  #sobre-mim .about-img-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 #sobre-mim .about-img-container .organic-shape {
   position: absolute;
@@ -303,26 +367,6 @@ section {
   line-height: 1.7;
   color: #2D2D2D;
   margin-bottom: 20px;
-}
-#sobre-mim .about-content .about-text .about-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 30px;
-}
-#sobre-mim .about-content .about-text .about-list li {
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 30px;
-}
-#sobre-mim .about-content .about-text .about-list li::before {
-  content: "🌻";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.1rem;
-}
-#sobre-mim .about-content .about-text .about-list li strong {
-  color: #A88532;
 }
 
 @keyframes morph-reverse {
@@ -433,20 +477,16 @@ section {
   line-height: 1.8;
   margin-bottom: 30px;
 }
-#atendimentos .atendimento-content .about-list {
-  list-style: none;
-  padding: 0;
-}
-#atendimentos .atendimento-content .about-list li {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
-}
-#atendimentos .atendimento-content .about-list li strong {
-  color: #A88532;
-}
 #atendimentos .atendimento-img-container {
   position: relative;
   padding: 20px;
+}
+@media (max-width: 991px) {
+  #atendimentos .atendimento-img-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 }
 #atendimentos .atendimento-img-container .organic-shape {
   position: absolute;
@@ -516,26 +556,42 @@ section {
 }
 
 footer {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #2D2D2D;
   color: white;
 }
 footer .social-links a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: white;
-  margin: 0 15px;
+  margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 footer .social-links a:hover {
   color: #F6C657;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+}
+footer .social-links a:first-child {
+  margin-left: 0;
 }
 footer p {
-  font-size: 0.9rem;
-  opacity: 0.7;
-  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.8;
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer .social-links {
+    margin-top: 10px;
+  }
+  footer .social-links a {
+    margin: 0 10px;
+  }
+  footer p {
+    margin: 15px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,12 +16,12 @@ $site_config = [
  */
 $contatos = [
     'whatsapp' => [
-        'numero'   => '5511999999999',
+        'numero'   => '5579999116883',
         'mensagem' => 'Olá! Vi seu site e gostaria de mais informações.',
     ],
-    'instagram' => 'https://instagram.com/seu-perfil',
+    'instagram' => 'https://www.instagram.com/raquelvalenca.psi/',
     'facebook'  => 'https://facebook.com/seu-perfil',
-    'email'     => 'contato@cliente.com.br',
+    'email'     => ' raquelvalenca26@gmail.com',
     'endereco'  => 'Rua Exemplo, 123 - Cidade/UF',
 ];
 
@@ -45,7 +45,7 @@ $servicos = [
  * PLUGINS ATIVOS (Controle de carregamento de scripts)
  */
 $plugins = [
-    'aos'      => false, // Animate On Scroll
+    'aos'      => true, // Animate On Scroll
     'lightbox' => false, // Galeria de fotos
     'swiper'   => false, // Slider/Carrossel
 ];

@@ -37,7 +37,9 @@
                         <li class="nav-item"><a class="nav-link" href="#sobre-mim">Sobre mim</a></li>
                         <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
                         <li class="nav-item"><a class="nav-link" href="#atendimentos">Atendimento</a></li>
+                        <?php /* ?>
                         <li class="nav-item"><a class="nav-link" href="#feedbacks">Feedbacks</a></li>
+                        <?php */ ?>
                     </ul>
                 </div>
             </div>
@@ -50,18 +52,20 @@
         <section id="hero">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="hero-content">
-                            <h1>Raquel Valença</h1>
-                            <span class="psicologa-tag">PSICÓLOGA - GESTALT-TERAPEUTA | CRP 19/4302</span>
+                    <div class="col-lg-6">
+                        <div class="hero-content" data-aos="fade-right">
+                            <div class="infos-raquel">
+                                <h1>Raquel Valença</h1>
+                                <span class="psicologa-tag">PSICÓLOGA - GESTALT-TERAPEUTA | CRP 19/4302</span>
+                            </div>
                             <p>Atendimento humanizado através da Gestalt-terapia com apoio profissional para sua jornada de autoconhecimento, de forma presencial ou online.</p>
-                            <a href="#" class="btn btn-hero">
+                            <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank" class="btn btn-hero">
                                 <i class="bi bi-whatsapp"></i> AGENDAR CONSULTA
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="hero-img-container text-center">
+                    <div class="col-lg-6">
+                        <div class="hero-img-container text-center" data-aos="fade-left">
                             <img src="img/galeria/foto-raquel-hero.png" alt="Raquel Valença" class="img-fluid relative">
                         </div>
                     </div>
@@ -73,7 +77,7 @@
         <section id="bg-message">
             <div class="container">
                 <div class="glass-card" data-aos="zoom-in">
-                    <p>A Gestalt Terapia</p>
+                    <p> “O terapeuta não é aquele que cura, é aquele que cuida. E quando a pessoa se sente cuidada, ela se cura.” - Jorge Ponciano</p>
                 </div>
             </div>
         </section>
@@ -82,13 +86,13 @@
         <section id="sobre-mim">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-5" data-aos="fade-right">
-                        <div class="about-img-container">
+                    <div class="col-lg-5">
+                        <div class="about-img-container" data-aos="fade-right">
                             <img src="img/galeria/foto-raquel-sobre.png" alt="Sobre Raquel Valença" class="img-fluid relative">
                         </div>
                     </div>
-                    <div class="col-lg-7" data-aos="fade-left">
-                        <div class="about-content">
+                    <div class="col-lg-7">
+                        <div class="about-content" data-aos="fade-left">
                             <h2 class="section-title">Sobre mim</h2>
                             <p class="quote">“O florescer através do autoconhecimento”</p>
                             <div class="about-text">
@@ -100,7 +104,7 @@
                                     <li><strong>Experiência:</strong> Atendimento clínico humanizado focado em questões relacionais e bem-estar emocional.</li>
                                     <li><strong>Localização:</strong> Atendimentos presenciais em Aracaju - SE e suporte online para todo o Brasil.</li>
                                 </ul>
-                                <a href="#" class="btn btn-hero mt-4">
+                                <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank" class="btn btn-hero mt-4">
                                     <i class="bi bi-whatsapp"></i> AGENDAR CONSULTA
                                 </a>
                             </div>
@@ -115,8 +119,8 @@
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Especialidades</h2>
                 <div class="row g-4">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="specialty-card">
+                    <div class="col-md-4">
+                        <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="card-icon">
                                 <i class="bi bi-people"></i>
                             </div>
@@ -124,8 +128,8 @@
                             <p>Suporte especializado para os desafios da adolescência, auxiliando na construção da identidade e regulação emocional.</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="specialty-card">
+                    <div class="col-md-4">
+                        <div class="specialty-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="card-icon">
                                 <i class="bi bi-person"></i>
                             </div>
@@ -133,8 +137,8 @@
                             <p>Acompanhamento focado no desenvolvimento pessoal, lidando com ansiedade, questões profissionais e relacionais.</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="specialty-card">
+                    <div class="col-md-4">
+                        <div class="specialty-card" data-aos="fade-up" data-aos-delay="300">
                             <div class="card-icon">
                                 <i class="bi bi-person-heart"></i>
                             </div>
@@ -169,7 +173,7 @@
                                 <li><strong>Acessibilidade:</strong> Suporte profissional para brasileiros em qualquer lugar do mundo.</li>
                                 <li><strong>Segurança:</strong> Plataformas que garantem o sigilo profissional absoluto.</li>
                             </ul>
-                            <a href="#" class="btn btn-hero mt-4">
+                            <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank" class="btn btn-hero mt-4">
                                 <i class="bi bi-whatsapp"></i> AGENDAR CONSULTA
                             </a>
                         </div>
@@ -195,7 +199,7 @@
                                 <h4><i class="bi bi-geo-alt"></i> Farolandia</h4>
                                 <p>Atendimento presencial em Aracaju, em ambiente acolhedor e profissional.</p>
                             </div>
-                            <a href="#" class="btn btn-hero mt-4">
+                            <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank" class="btn btn-hero mt-4">
                                 <i class="bi bi-whatsapp"></i> AGENDAR CONSULTA
                             </a>
                         </div>
@@ -203,7 +207,7 @@
                 </div>
             </div>
         </section>
-
+        <?php /* ?>
         <!-- Seção 6: Feedbacks -->
         <section id="feedbacks">
             <div class="container">
@@ -228,18 +232,31 @@
                 </div>
             </div>
         </section>
-
+        <?php */ ?>
     </main>
 
     <footer id="contato">
-        <div class="container text-center">
-            <img src="img/logo-raquel.png" alt="Raquel Valença" class="mb-4" style="max-height: 80px; filter: brightness(0) invert(1);">
-            <div class="social-links mb-4">
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- Logo à esquerda -->
+                <div class="col-md-auto text-center text-md-start mb-3 mb-md-0">
+                    <img src="img/logo-raquel.png" alt="Raquel Valença" style="max-height: 40px; filter: brightness(0) invert(1);">
+                </div>
+                
+                <!-- Copyright centralizado -->
+                <div class="col-md text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 Raquel Valença Psicóloga. Todos os direitos reservados.</p>
+                </div>
+
+                <!-- Redes sociais à direita -->
+                <div class="col-md-auto text-center text-md-end">
+                    <div class="social-links">
+                        <a href="<?php echo $contatos['instagram']; ?>" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="<?php echo getWhatsLink($contatos); ?>" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:<?php echo $contatos['email']; ?>"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2024 Raquel Valença Psicóloga. Todos os direitos reservados.</p>
         </div>
     </footer>
 

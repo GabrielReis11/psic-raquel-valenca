@@ -1,27 +1,45 @@
 footer {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: $grafite;
   color: white;
 
   .social-links {
     a {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: white;
-      margin: 0 15px;
+      margin-left: 15px;
       @include transition;
       display: inline-block;
 
       &:hover {
         color: $amarelo-claro;
-        transform: translateY(-5px);
+        transform: translateY(-3px);
+      }
+
+      &:first-child {
+        margin-left: 0;
       }
     }
   }
 
   p {
-    font-size: 0.9rem;
-    opacity: 0.7;
-    margin-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.8;
     margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+    
+    .social-links {
+      margin-top: 10px;
+      a {
+        margin: 0 10px;
+      }
+    }
+
+    p {
+      margin: 15px 0;
+    }
   }
 }
